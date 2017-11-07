@@ -1,0 +1,82 @@
+<resources>
+    <declare-styleable name="MyView">
+        <attr name="exampleString" format="string"/>
+        <attr name="exampleDimension" format="dimension"/>
+        <attr name="exampleColor" format="color"/>
+        <attr name="exampleDrawable" format="color|reference"/>
+    </declare-styleable>
+
+
+    <declare-styleable name="ColorArcProgressBar">
+        <attr name="back_color" format="color"/>
+        <attr name="front_color1" format="color"/>
+        <attr name="front_color2" format="color"/>
+        <attr name="front_color3" format="color"/>
+        <attr name="back_width" format="dimension"/>
+        <attr name="front_width" format="dimension"/>
+        <attr name="is_need_title" format="boolean"/>
+        <attr name="is_need_content" format="boolean"/>
+        <attr name="is_need_unit" format="boolean"/>
+        <attr name="is_need_dial" format="boolean"/>
+        <attr name="string_title" format="string"/>
+        <attr name="string_unit" format="string"/>
+        <attr name="total_engle" format="integer"/>
+        <attr name="current_value" format="float"/>
+        <attr name="max_value" format="float"/>
+        <attr name="image" format="reference"/>
+        <attr name="imageScaleType">
+            <enum name="fillXY" value="0"/>
+            <enum name="center" value="1"/>
+        </attr>
+    </declare-styleable>
+
+
+    <declare-styleable name="ButtonRandomView">
+        <attr name="buttonText" format="string"/>
+        <attr name="buttonColor" format="color"/>
+        <attr name="buttonSize" format="dimension"/>
+    </declare-styleable>
+
+
+    <declare-styleable name="ImageAndTitleView">
+        <attr name="titleText" format="string"/>
+        <attr name="titleTextSize" format="dimension"/>
+        <attr name="titleTextColor" format="color"/>
+        <attr name="radiusBg" format="dimension"/>
+        <attr name="imageTextSpacing" format="dimension"/>
+        <attr name="imageIcon" format="reference"/>
+        <attr name="imageIconScaleType">
+            <enum name="fillXY" value="0"/>
+            <enum name="center" value="1"/>
+        </attr>
+    </declare-styleable>
+
+
+    <!--进度-->
+    <declare-styleable name="CustomProgressBar">
+        <attr name="custom_progress_back_color" format="color"/>
+        <attr name="custom_progress_front_color1" format="color"/>
+        <attr name="custom_progress_front_color2" format="color"/>
+        <attr name="custom_progress_front_color3" format="color"/>
+        <attr name="custom_progress_back_width" format="dimension"/>
+        <attr name="custom_progress_front_width" format="dimension"/>
+    </declare-styleable>
+
+
+
+
+    <declare-styleable name="ArcProgressBar">
+        <attr name="arcDistance" format="integer"/>
+        <attr name="arcBgColor" format="color"/>
+        <attr name="dottedDefaultColor" format="color"/>
+        <attr name="dottedRunColor" format="color"/>
+        <attr name="dottedLineCount" format="integer"/>
+        <attr name="dottedLineWidth" format="integer"/>
+        <attr name="dottedLineHeight" format="integer"/>
+        <attr name="lineDistance" format="integer"/>
+        <attr name="progressMax" format="integer"/>
+        <attr name="progressTextSize" format="integer"/>
+        <attr name="progressDesc" format="string"/>
+        <attr name="arcText" format="string"/>
+    </declare-styleable>
+</resources>

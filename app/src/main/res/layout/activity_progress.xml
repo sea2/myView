@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#444444"
+    android:orientation="vertical"
+    tools:context="com.ispring.canvasdemo.ProgressActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <com.ispring.canvasdemo.ui.ClockView
+                    android:id="@+id/clock_view"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="#ffffff"
+                    />
+
+                <Button
+                    android:id="@+id/btn_clock_stop"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="取消"/>
+
+                <Button
+                    android:id="@+id/btn_clock_stop2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="暂停"/>
+
+                <Button
+                    android:id="@+id/btn_clock_stop3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="恢复"/>
+            </LinearLayout>
+
+            <com.ispring.canvasdemo.ui.ButtonProgress
+                android:id="@+id/btn_pg"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:background="#ffffff"
+                />
+
+
+            <com.ispring.canvasdemo.ui.ImageAndTitleView
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                app:imageIcon="@drawable/ic_launcher"
+                app:imageIconScaleType="fillXY"
+                app:titleText="hello andorid ! "
+                app:titleTextColor="#ff0000"
+                app:titleTextSize="30sp"
+                />
+
+
+            <com.ispring.canvasdemo.ui.ButtonRandomView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                app:buttonColor="@color/colorAccent"
+                app:buttonSize="16sp"
+                app:buttonText="呵呵笑"
+                />
+
+
+            <com.ispring.canvasdemo.ui.Progress2View
+                android:id="@+id/progress2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="#555555"
+                />
+
+            <com.ispring.canvasdemo.ui.ProgressView
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:background="#555555"
+                />
+
+
+        </LinearLayout>
+
+    </ScrollView>
+
+
+</LinearLayout>
