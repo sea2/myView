@@ -9,7 +9,7 @@
     android:orientation="vertical"
     tools:context="com.ispring.canvasdemo.ProgressActivity">
 
-    <ScrollView
+    <com.ispring.canvasdemo.ui.ReboundScrollView
         android:layout_width="match_parent"
         android:layout_height="match_parent">
 
@@ -56,6 +56,13 @@
                 android:background="#ffffff"
                 />
 
+            <com.ispring.canvasdemo.ui.CircleProgress
+                android:id="@+id/circle_progress"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="#ffffff"
+                />
+
 
             <com.ispring.canvasdemo.ui.ImageAndTitleView
                 android:layout_width="100dp"
@@ -94,7 +101,7 @@
 
         </LinearLayout>
 
-    </ScrollView>
+    </com.ispring.canvasdemo.ui.ReboundScrollView>
 
 
 </LinearLayout>

@@ -13,6 +13,7 @@ public class CanvasActivity extends Activity {
 
     private MyView myView = null;
 
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);

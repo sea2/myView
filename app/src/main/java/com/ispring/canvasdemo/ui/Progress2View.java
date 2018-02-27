@@ -6,7 +6,6 @@ import android.graphics.Canvas;
 import android.graphics.Color;
 import android.graphics.Paint;
 import android.graphics.RectF;
-import android.os.Build;
 import android.support.annotation.Nullable;
 import android.util.AttributeSet;
 import android.util.Log;
@@ -107,11 +106,9 @@ public class Progress2View extends View {
             progressAnimator.addUpdateListener(new ValueAnimator.AnimatorUpdateListener() {
                 @Override
                 public void onAnimationUpdate(ValueAnimator animation) {
-                    if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.HONEYCOMB) {
                         progressInt =  (int)animation.getAnimatedValue();
                         Log.e("123",String.valueOf(progressInt));
                         invalidate();
-                    }
                 }
             });
             progressAnimator.start();

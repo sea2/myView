@@ -7,6 +7,7 @@ import android.view.View;
 import android.widget.Button;
 
 import com.ispring.canvasdemo.ui.ButtonProgress;
+import com.ispring.canvasdemo.ui.CircleProgress;
 import com.ispring.canvasdemo.ui.ClockView;
 import com.ispring.canvasdemo.ui.Progress2View;
 
@@ -17,17 +18,28 @@ public class ProgressActivity extends Activity {
     private ClockView clock_view;
     private Button btn_clock_stop2;
     private Button btn_clock_stop3;
+    private ClockView clockview;
+    private Button btnclockstop;
+    private Button btnclockstop2;
+    private Button btnclockstop3;
+    private ButtonProgress btnpg;
+    private com.ispring.canvasdemo.ui.CircleProgress circleprogress;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_progress);
+        this.circleprogress = (CircleProgress) findViewById(R.id.circle_progress);
         this.progress2 = (Progress2View) findViewById(R.id.progress2);
         ButtonProgress btn_pg = (ButtonProgress) findViewById(R.id.btn_pg);
+
+
         new Handler().postDelayed(new Runnable() {
             @Override
             public void run() {
                 progress2.setProgressInt(250);
+
+                circleprogress.setProgressint(0.8f);
             }
         }, 3000);
 
@@ -63,7 +75,6 @@ public class ProgressActivity extends Activity {
                 clock_view.restart();
             }
         });
-
     }
 
 

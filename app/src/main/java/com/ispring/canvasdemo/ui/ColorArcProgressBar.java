@@ -27,6 +27,7 @@ import com.ispring.canvasdemo.R;
 /**
  * colorful arc progress bar
  * Created by shinelw on 12/4/15.
+ *  postInvalidateDelayed(200);//延迟刷新
  */
 public class ColorArcProgressBar extends View {
 
@@ -116,6 +117,7 @@ public class ColorArcProgressBar extends View {
         super(context, attrs, defStyleAttr);
         initCofig(context, attrs);
         initView();
+
     }
 
     /**
