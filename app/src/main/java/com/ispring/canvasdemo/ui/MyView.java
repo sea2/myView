@@ -27,7 +27,7 @@ public class MyView extends View {
     private float density = getResources().getDisplayMetrics().density;
     private Bitmap bitmap;
 
-    public static enum DrawMode {
+    public  enum DrawMode {
         UNKNOWN(0),
         AXIS(1),
         ARGB(2),

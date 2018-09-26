@@ -10,6 +10,7 @@ import android.graphics.RectF;
 import android.os.Build;
 import android.support.annotation.Nullable;
 import android.util.AttributeSet;
+import android.util.Log;
 import android.view.View;
 
 /**
@@ -73,13 +74,16 @@ public class ClockView extends View {
 
     @Override
     protected void onMeasure(int widthMeasureSpec, int heightMeasureSpec) {
-
         setMeasuredDimension(320, 320);
+        Log.e(this.getClass().getSimpleName(),"onMeasure getWidth"+getWidth());
+        Log.e(this.getClass().getSimpleName(),"onMeasure getMeasuredWidth"+getMeasuredWidth());
     }
 
     @Override
     protected void onLayout(boolean changed, int left, int top, int right, int bottom) {
         super.onLayout(changed, left, top, right, bottom);
+        Log.e(this.getClass().getSimpleName(),"onLayout getWidth"+getWidth());
+        Log.e(this.getClass().getSimpleName(),"onLayout getMeasuredWidth"+getMeasuredWidth());
     }
 
 
