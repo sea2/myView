@@ -72,7 +72,7 @@ public class ButtonRandomView extends View {
         mPaint.setTextAlign(Paint.Align.CENTER);
 
         rect = new Rect();
-/*        由调用者返回在边界(分配)最小的矩形 *包含所有的字符,隐含原点(0,0)*/
+        /*        由调用者返回在边界(分配)最小的矩形 *包含所有的字符,隐含原点(0,0)*/
         mPaint.getTextBounds(buttonText, 0, buttonText.length(), rect);
 
         final Random random = new Random();
@@ -87,6 +87,13 @@ public class ButtonRandomView extends View {
     }
 
 
+    /**
+     * MeasureSpec.EXACTLY   精确
+     * MeasureSpec.UNSPECIFIED 自适应未指明
+     * MeasureSpec.AT_MOST 子对象可以任意大-父布局内最大
+     * @param widthMeasureSpec
+     * @param heightMeasureSpec
+     */
     @Override
     protected void onMeasure(int widthMeasureSpec, int heightMeasureSpec) {
 
@@ -96,6 +103,7 @@ public class ButtonRandomView extends View {
         int heightSize = MeasureSpec.getSize(heightMeasureSpec);
         int width;
         int height;
+
         if (widthMode == MeasureSpec.EXACTLY) {
             width = widthSize;
         } else {

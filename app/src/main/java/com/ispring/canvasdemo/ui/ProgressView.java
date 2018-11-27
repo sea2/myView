@@ -39,6 +39,15 @@ public class ProgressView  extends View{
     }
 
 
+
+
+    /**
+     * MeasureSpec.EXACTLY   精确
+     * MeasureSpec.UNSPECIFIED 自适应未指明
+     * MeasureSpec.AT_MOST 子对象可以任意大-父布局内最大
+     * @param widthMeasureSpec
+     * @param heightMeasureSpec
+     */
     @Override
     protected void onMeasure(int widthMeasureSpec, int heightMeasureSpec) {
 
